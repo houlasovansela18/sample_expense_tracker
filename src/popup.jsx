@@ -13,7 +13,7 @@ function history() {
                 <div className="float-start text-light">{history.description}</div>
                 <div className="float-end text-light">
                     {history.amount} $
-                    <span className="ms-3 fs-6 text-light" type="button"><i class="fas fa-times-circle"></i></span>
+                    <span className="ms-3 fs-6 text-danger" type="button">x</span>
                 </div>
             </div>
             <div className="text-light">
