@@ -8,10 +8,10 @@ function history() {
                     {"description":"buy tv","amount": -2000,"date":"27 Dec 2021"}
                 ]
     const historyList = history.map((history,index) => 
-        <li className="list-group-item bg-transparent p-0" id={index + 1}>
+        <li className="list-group-item bg-transparent p-0" id={index}>
             <div className="clearfix">
                 <div className="float-start text-light">{history.description}</div>
-                <div className="float-end text-light"> 
+                <div className="float-end text-light">
                     {history.amount} $
                     <span className="ms-3 fs-6 text-light" type="button"><i class="fas fa-times-circle"></i></span>
                 </div>
@@ -19,10 +19,13 @@ function history() {
             <div className="text-light">
                 {history.date}
             </div>
-        </li>)
+        </li>
+    )
     
     return (
-        <ul className="list-group list-group-flush">{historyList}</ul>
+        <ul className="list-group list-group-flush">
+            {historyList}
+        </ul>
     )
 }
 
